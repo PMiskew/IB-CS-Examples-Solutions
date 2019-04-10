@@ -1,5 +1,5 @@
 package super_call_example;
 
-public class B {
+public class B extends A {
 
 }
