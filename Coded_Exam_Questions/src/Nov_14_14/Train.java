@@ -36,8 +36,18 @@ public class Train {
 	
 	public Wagon removeWagon() {
 		//Code to be written 
-		mWagonCount--;
-		return mWagons[mWagonCount];
+		//assume null return
+		if (mWagonCount > 0) {
+			mWagonCount--;
+			return mWagons[mWagonCount + 1];
+		}
+		return null
+	
+		
+	}
+	
+	public int getNumberOfWagons() {
+		return mWagonCount;
 	}
 	
 }
