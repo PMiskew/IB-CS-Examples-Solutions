@@ -16,6 +16,12 @@ public class Engine extends RollingStock{
 		return super.getWeight(); 
 	}
 	
+
+	public String toString() {
+		
+		return "eeeE.";
+	}
+	
 	//Other methods
 
 

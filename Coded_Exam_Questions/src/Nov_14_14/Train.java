@@ -50,4 +50,14 @@ public class Train {
 		return mWagonCount;
 	}
 	
+	public String toString() {
+		
+		String val = "";
+		
+		for (int i = 0; i < mEngineCount; i++) {
+			val = val + mEngines[i].toString();
+		}
+		
+		return val;
+	}
 }
