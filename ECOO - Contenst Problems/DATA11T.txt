@@ -1,0 +1,4 @@
+3
+foo@bar.com
+fO.o+baz123@bAR.com
+foo@bar..com

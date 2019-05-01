@@ -1,0 +1,4 @@
+3
+c++@foo.com
+c..@Foo.com
+.c+c@FOO.COM

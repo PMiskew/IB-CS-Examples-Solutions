@@ -35,16 +35,19 @@ public class Array2DDemo {
 		
 		//advice from a former student.
 		//Visualize 2D arrays as an array of Arrays.  This means by accessing a 2D array with a single index
-		//you get the row returned. 
+		//you get the row returned. This is very useful when trying to pass values into other functions. 
 		System.out.println(Arrays.toString(matrix[0]));
 		
 		//Standard loop to go through all elements
+		//Suggestions: Use r and c 
 		for (int r = 0; r < matrix.length; r = r + 1) {
 			for (int c =0; c < matrix[r].length; c = c + 1) {
 				System.out.print(matrix[r][c]+", ");
 			}
 			System.out.println();
 		}
+		
+		
 		
 	}
 
