@@ -5,9 +5,20 @@ import java.util.Scanner;
 
 public class ECOORegional2019P1Email {
 
+	
 	public static void main(String[] args) throws FileNotFoundException {
 	
-		System.out.println("helloworld".replaceAll("o", ""));
+		/*GOOD TAKE AWAYS
+		 *  - Using replace all to replace all . requires the use of an escape code
+		 *  - The last step in this where you had to identify the number of unique 
+		 *    elements is a nice general algorithm to develop. See 
+		 *    	- UniqueElementsInArray1D.java
+		 *    	- UniqueElementsInArray2D.java
+		 *    	- UniqueElementsInArrayList.java
+		 *  - Using substring to access part of a string. 
+		 *  - Looping through 1D Array Structure. 
+		 *    	
+		 */
 		Scanner s = new Scanner(new File("DATA12T.txt"));
 		
 		int len = Integer.parseInt(s.nextLine());
@@ -57,9 +68,9 @@ public class ECOORegional2019P1Email {
 		
 		
 		
-		System.out.println(Arrays.toString(data));
-		System.out.println(Arrays.toString(front));
-		System.out.println(Arrays.toString(back));
+		//System.out.println(Arrays.toString(data));
+		//System.out.println(Arrays.toString(front));
+		//System.out.println(Arrays.toString(back));
 		
 		
 				
