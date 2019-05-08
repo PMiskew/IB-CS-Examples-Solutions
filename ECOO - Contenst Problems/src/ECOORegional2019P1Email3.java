@@ -31,6 +31,7 @@ public class ECOORegional2019P1Email3 {
 			 *    	- UniqueElementsInArrayList.java
 			 *  - Using substring to access part of a string. 
 			 *  - Looping through 1D Array Structure. 
+			 *  - When storing large amounts of unique items, use HashSets 
 			 *    	
 			*/
 			int len = Integer.parseInt(s.nextLine());
@@ -39,10 +40,12 @@ public class ECOORegional2019P1Email3 {
 			String[] front = new String[len];
 			int count = 0;
 		
+			//HashSets are the fastest way to make a list with no 
+			//duplicates. In this problem, this is the best approach because
+			//the HashSet will take care of dealing with duplications, which is 
+			//what slows down the processing of the program. 
 			Set<String> results = new HashSet<String>();
-
-			
-			
+	
 			for (int i = 0; i < len; i = i + 1) {
 				
 				data[i] = s.nextLine();
