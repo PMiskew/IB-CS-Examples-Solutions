@@ -27,6 +27,18 @@ public class PresentationActivities {
 		String word = s[0].nextLine();
 		
 		
+		boolean[][] flags = new boolean[2][3];
+		
+		for (int row = 0; row < flags.length; row = row + 1) {
+			for (int col = 0; col < flags[row].length; col = col + 1) {
+				flags[row][col] = true;
+			}
+		}
+		
+		
+		
+		
+		
 	}
 	
 	public static int[] gen1DArray(int l, int n) {
