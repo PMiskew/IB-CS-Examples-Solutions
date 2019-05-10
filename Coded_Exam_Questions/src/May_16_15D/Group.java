@@ -18,16 +18,21 @@ public class Group {
 	public int getNumber() { return number; }
 	
 	//I DON'T KNOW WHAT THE EXAM IS THINKING PUTTING THIS HERE!
-	 
+	//I have relocated it and use the constructor;
+	//private int[] gRooms = new int[number] 
 
-	//NOT COMPLETE
 	public double bill(int[] gRooms) {
-		return 0;
+		
+		//15D - Complete the method. 
+		int total = 0;
+		for (int i = 0; i < gRooms.length; i = i + 1) {
+			
+			total = total + gRooms[i];
+		}
+		
+		return total;
 		
 	}
 	
-	public String toString() {
-		return "Hi";
-		
-	}
+	
 }

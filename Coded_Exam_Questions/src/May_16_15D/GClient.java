@@ -6,10 +6,11 @@ package May_16_15D;
  * GClient is the SUB-CLASS
  * Client is the SUPER-CLASS
  * 
- * Theory: 	A subclass inherits all attributes and behaviours, but NOT 
+ * Theory: 	Sub-class and super-class
+ * 		-	A subclass inherits all attributes and behaviours, but NOT 
  * 			constructors.
  * 
- * Theory:	
+ * Theory:	Constructors (super)
  * 		- 	Objects are constructed from general to specific. 
  * 		- 	By default every class gets a constructor that takes 
  * 			no parameters. 
@@ -17,6 +18,17 @@ package May_16_15D;
  * 			removed. 
  * 		-	If the super class requires parameters use super short hand.  
  * 		- 	The super call MUST BE THE FIRST THING IN THE CONSTRUCTOR
+ * 
+ * For detailed explanation, see the videos at the below links:
+ * 		Hierarchies - Two Parts
+ * 			https://www.youtube.com/watch?v=233axWf2MDA
+ * 			https://www.youtube.com/watch?v=qtsaLmbQD7M&t=82s
+ * 
+ * 		Super Class - Two Parts
+ * 			https://www.youtube.com/watch?v=qtsaLmbQD7M&t=82s
+ * 			https://www.youtube.com/watch?v=eBaeqRNUvc8
+ * 
+ * 
  * 
  * What Does this mean here?
  *	When constructing a client we must take a parameter for every field
@@ -31,6 +43,11 @@ public class GClient extends Client{
 
 	private String groupName;
 	public GClient(int id, String c, Dates dateIn, Dates dateOut, Room r, String gn) {
+		//Write super is short hand in constructors for calling the constructor of the super class. 
+		//IT MUST BE THE FIRST THING IN THE CONSTRUCTOR.  By default all constructors have 
+		//super(), which is a call to the default constructor. Since the super class does not have a 
+		//default constructor we must explicitly write the super call. 
+		//
 		super(id,c,dateIn,dateOut,r);
 		groupName = gn;
 

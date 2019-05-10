@@ -32,8 +32,16 @@ public class Client {
 	public Room getBedroom() { return bedroom; }
 	
 	public void bill() {
+		//14D - It is important that you approach this question in the spirt of what they want. 
+		//		don't stress about how the information gets outputted, just that it does. 
+		System.out.println("Name: "+name);
+		System.out.println("Room Number: "+bedroom.getRoomNumber());
+		System.out.println("Arrival: "+arrive);
+		System.out.println("Departure:"+leave);
+		System.out.println("Rooms:"+Dates.stayDays(arrive, leave));
+		double cost = Dates.stayDays(arrive,leave) * bedroom.getPrice();
+		System.out.println("Total Cost: "+cost);
 		
-		bedroom.get
-	
+		
 	}
 }
