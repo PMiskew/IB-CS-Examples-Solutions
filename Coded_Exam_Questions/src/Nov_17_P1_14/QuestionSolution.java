@@ -5,16 +5,28 @@ import java.util.Arrays;
 public class QuestionSolution {
 
 	
+	/**
+	 * 
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		
-	
-		int[][] mat = { {7, 0, 0, 0, 0, 0},
+		
+		/*
+		 * 
+		 * Test Code for Nov_17_P1_14
+		 * 
+		 */
+		int[][] mat = { 
+						
+						{7, 0, 0, 0, 0, 0},
 					    {0, 0, 0, 0, 0, 0},
 					    {0, 0,-3, 0, 9, 0},
 					    {0, 0, 0, 0, 0, 0},
 					    {0, 0,-1, 0, 0, 0},
 					    {0,-6, 0, 0, 5, 1}
-					   };
+					   
+					  };
 		
 		//(A) - We can count the number of elements and get 36 - RULE: 2D Array multiply the 
 		//		rows by the columns to get total elements. 
@@ -33,7 +45,7 @@ public class QuestionSolution {
 		System.out.println(count);
 		
 		int[] values1 = genValuesArray(mat);
-		System.out.println(Arrays.toString(values));
+		System.out.println(Arrays.toString(values1));
 		
 		
 		//Approach 2:	I just did it as a method and returned a 2D array with each 1D array. 
@@ -44,13 +56,21 @@ public class QuestionSolution {
 		
 		
 		
-	}
+	} // end main
 	
 	
+	/**
+	 * 
+	 * @param mat
+	 * @return
+	 */
 	public static int[][] partC(int[][] mat) {
 		
-		for
-	}
+		return null;
+		
+	} //end partC
+	
+	
 	/**
 	 * This function takes a 2D Array of integers and returns the number of elements
 	 * that are not val. 
@@ -70,7 +90,7 @@ public class QuestionSolution {
 			}
 		}
 		return count;
-	}
+	} //end countNotInstance
 	
 	/**
 	 * This function takes a 2D Array of integers and returns the number of elements
@@ -91,9 +111,15 @@ public class QuestionSolution {
 			}
 		}
 		return count;
-	}
+	} //end countInstance
 	
+	/**
+	 * 
+	 * @param a
+	 * @return
+	 */
 	public static int[] genValuesArray(int[][] a) {
+		
 		/*
 		 * Because arrays are static data structures and we must know the 
 		 * size in advance we must run through the array twice.  The first time
@@ -123,6 +149,6 @@ public class QuestionSolution {
 		
 	
 	
-	}
+	}//end genValuesArray
 	
-}
+} //end class
