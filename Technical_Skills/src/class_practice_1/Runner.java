@@ -76,16 +76,16 @@ public class Runner {
 	public static void printBusList(Bus b) {
 		
 		
-		Student[] arrayStudents = b.getStudentList();
+		Student[] as = b.getStudentList();
 		System.out.println("Student Number: \tName: \t\tAge:");
 
 		System.out.println("*******************************************");
-		for (int i = 0; i < arrayStudents.length; i++) {
+		for (int i = 0; i < as.length; i++) {
 		
-			if (arrayStudents[i] != null) {
-				String sn = arrayStudents[i].getStudentNumber();
-				String name = arrayStudents[i].getName();
-				int age = arrayStudents[i].getAge();
+			if (as[i] != null) {
+				String sn = as[i].getStudentNumber();
+				String name = as[i].getName();
+				int age = as[i].getAge();
 	
 				System.out.println("\t"+sn+"\t\t"+name+"\t\t"+age);
 			}

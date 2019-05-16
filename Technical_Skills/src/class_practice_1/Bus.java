@@ -5,7 +5,10 @@ public class Bus {
 	private int num;
 	private int maxcapacity;
 	private static int fleet_count;
-	private Student[] students;
+	//This array holds all students on teh bus. 
+	//For example if there are 7 students and the capacity of the bus is 10
+	//students = {s1,s2,s3,s4,s5,s6,s7,null,null,null}
+	private Student[] students; 
 	
 	/**
 	 * 
