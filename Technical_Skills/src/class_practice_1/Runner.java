@@ -24,6 +24,12 @@ public class Runner {
 
 	public static void main(String[] args) {
 	
+		//Example of final
+		final int x = 9;
+		
+		
+		//x = 4;
+		
 		//We are creating instances of the student class. 
 		//Reference Type --> Object Type
 		//Student constructor has two parameters.
@@ -34,6 +40,18 @@ public class Runner {
 		Student s5 = new Student(14,"Peter");
 		Student s6 = new Student(10,"Jihoo");
 		Student s7 = new Student(12,"Edgar");
+		
+		//BAD: 	This is bad because even though you 
+		//		can call getStudentCount with an instance
+		//		it is a static method and doesn't need once. 
+		System.out.println(s1.getStudentCount());
+		System.out.println(s4.getStudentCount());
+		
+		//Good
+		System.out.println(Student.getStudentCount());
+		
+		
+		
 		
 		//Array that holds all seve students. 
 		//Array of Objects (reference types).

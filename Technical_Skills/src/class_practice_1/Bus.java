@@ -26,6 +26,11 @@ public class Bus {
 		
 	}
 	
+	public Bus() {
+		
+	}
+	
+	//Returning an array of students. 
 	public Student[] getStudentList() { return students; }
 	
 }
