@@ -300,7 +300,7 @@ public class QuestionSolution {
 		for (int r = 0; r < results.length; r = r + 1) {
 			System.out.println(Arrays.toString(results[r]));
 		}
-		*/
+		
 		
 		
 		
@@ -315,7 +315,7 @@ public class QuestionSolution {
 		
 		
 	}
-	
+	*/
 
 	
 } //end class
